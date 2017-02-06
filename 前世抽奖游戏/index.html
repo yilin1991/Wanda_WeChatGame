@@ -1,19 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title></title>
-    <script type="text/javascript">
-    	
-   		document.addEventListener('plusready', function(){
-   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
-   			
-   		});
-   		
-    </script>
-</head>
-<body>
-	
-</body>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>测前世信用，赢今生大奖</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+
+		<div class="pagebody">
+			<!--游戏首页 Begin-->
+			<!--<div class="indexbody">
+			<img src="img/index/title_img.png" class="title_img"/>
+			<a class="begingame"><img src="img/index/btn_begin.png"/></a>
+		</div>-->
+			<!--游戏首页 End-->
+
+			<!--登记薄 Begin-->
+			<div class="registerbody">
+				<div class="registerbox">
+					<div class="registerbg">
+						<img src="img/index/formbg.png" />
+					</div>
+
+					<div class="registerform">
+						<img class="reg_title" src="img/index/register_title.png" />
+						<div class="reg_group">
+							<select name="">
+								<option value="">输入性别</option>
+								<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;男</option>
+								<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;女</option>
+							</select>
+						</div>
+						<div class="reg_group">
+
+							<input type="text" class="input_text" datatype="*" name="txtdate" id="txtdate" value="" onfocus="(this.type='date')" onblur="this.type='text'" placeholder="输入生辰" />
+						</div>
+						
+						<a href="#" class="btn_register"><img src="img/index/btn_register.png"/></a>
+						
+						<img src="img/index/remark_register.png" class="remark_register"/>
+						
+					</div>
+					
+					
+					<div class="registerclose">
+						<a href="#"><img src="img/index/formclose.png"/></a>
+					</div>
+					
+					
+				</div>
+			</div>
+			<!--登记簿 End-->
+		</div>
+
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="js/selectivity-jquery.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
 </html>

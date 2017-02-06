@@ -1,0 +1,39 @@
+html,body{height: 100%;}
+
+img{display: block;width: 100%;}
+
+.pagebody{width: 100%;height: 100%;position: relative;background: url(../img/luckdraw_index/luckdraw_index_bg.jpg) no-repeat top center;background-size: 100% auto;display: flex;display: -webkit-flex;flex-direction: column;align-items: center;/*justify-content: center;*/}
+
+
+.luck_page_title{width: 100%;margin-top: 10%;}
+
+.luck_page_num{width: 70%;margin-top: 30px;position: relative;}
+
+.luck_page_numtext{position: absolute;left: 0;top: 0; width: 100%; height: 100%;display: flex;display: -webkit-flex;justify-content: center;align-items: center;color: #FFFFFF;}
+.luck_page_numtext span {display: block; font-size: 90%;}
+.luck_page_numtext span:nth-child(2){font-size: 180%;display: inline-block;margin-bottom: 3px;font-weight: 600;color: #ff0000;padding: 0 3px;}
+
+
+.luck_page_list{width: 90%;margin-top: 5%;position: relative;}
+
+
+.luck_page_list .luck_page_listbox{width: 90%; height: 90%; margin-left: 5%;margin-top: 5%; position: absolute;left: 0;top: 0;  display: flex;display: -webkit-flex;flex-wrap: wrap;justify-content: space-around;align-content: stretch;}
+.luck_page_list .luck_page_listbox .luck_page_li{width: 30%;display: table;}
+
+.luck_page_prize{width: 90%;display: flex;display: -webkit-flex; justify-content: space-between; align-items: center;margin-top: 2.5%;}
+
+
+.luck_page_prize span{font-size: 80%;}
+.luck_page_prize span b{color: #bf0000;}
+.luck_page_prize a{font-size: 80%;color: #2d1101;}
+
+
+
+
+.luckdrawmsgbody{width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 99;background: rgba(0,0,0,0.72);display: flex;display: -webkit-flex;flex-direction: column;align-items: center;}
+
+.luckdrawmsgbody .msgreslutimg{margin-top: 15%;}
+.luckdrawmsgbody a.msgreslutbtn{display: block;width: 40%;margin-top: 4%;}
+
+
+.closemsgbody{width: 8%;position: absolute;right: 6.5%;top: 18%;}

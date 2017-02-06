@@ -1,0 +1,15 @@
+html,body{width: 100%;height: 100%;}
+
+.resultbody{width: 100%;height: 100%;background: url(../img/result/detailbg.jpg) no-repeat top center;background-size: 100% auto;}
+
+.resultbody img.resultimg{display: inline-block;width: 100%;margin-top: 3%;}
+
+.resultbody .resultbtn{width: 100%;display: flex;justify-content: center;margin-top: 2%;}
+
+.resultbody .resultbtn a{display: block;width: 35%;margin: 0 3%;}
+.resultbody .resultbtn a img{display: block;width: 100%;}
+
+
+
+.sharebody{width: 100%;height: 100%; position: absolute;left: 0;top: 0;z-index: 99;background: rgba(0,0,0,0.72);text-align: right;display: none;}
+.sharebody img{display: inline-block;width: 50%;margin-right: 6.5%;}

@@ -1,0 +1,76 @@
+html,body{height: 100%;}
+img{display: block;width: 100%;}
+.luckindexbody{width: 100%; height: 100%; background: url(../img/luckdraw_index/luckdraw_index_bg.jpg) no-repeat top center; background-size: 100% auto;display: flex;display: -webkit-flex;flex-direction: column;align-items: center;}
+
+.luckindexbody .luck_title{width: 35%;margin-top: 15%;}
+.luckindexbody .luck_remark{width: 70%;margin-top: 5%;}
+
+.luckindexbody .luck_box{width: 88%;margin-top: 7%;position: relative;}
+
+.luck_box .luck_form{width: 100%; height: 100%;position: absolute;left: 0;top: 0;display: flex;display: -webkit-flex; flex-direction: column; align-items: center;justify-content: center;}
+
+
+.luck_box .luck_form .luck_group{width: 62%; height: 40px;margin-bottom: 5%;}
+.luck_box .luck_form .luck_group input{appearance: none;-moz-appearance: none;-webkit-appearance: none;height: 100%;border-radius: 0;border:solid 1px #6a3906;color: #6a3906;text-align: center;font-size: 14px;background: #b7905b;box-sizing: border-box;-webkit-box-sizing: border-box;}
+
+input::-webkit-input-placeholder {
+　　color: #6a3906; 
+　　}
+　　input:-moz-placeholder {
+　　color: #6a3906; 
+　　}
+	input::-moz-placeholder {
+　　color: #6a3906; 
+　　}
+　input:-ms-input-placeholder {
+　　color: #6a3906;
+　　}
+
+
+.luck_box .luck_form .luck_group:nth-child(1) input{width: 100%;}
+
+.luck_box .luck_form .luck_group:nth-child(2){display: flex;display: -webkit-flex;justify-content: space-between;}
+
+
+.luck_box .luck_form .luck_group:nth-child(2) input{width: 55%;}
+.luck_box .luck_form .luck_group:nth-child(2) a{width: 40%;display: block;height: 100%;background-color: #6a3906;text-align: center;line-height: 40px;font-size: 12px;color: #eac795;}
+.luck_box .luck_form .luck_rule{width: 25%;margin-top: 3%;}
+
+.luck_btn{width: 40%;margin-top: 5%;}
+
+.luck_btn a{display: block;width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
