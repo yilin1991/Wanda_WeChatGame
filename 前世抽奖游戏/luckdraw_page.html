@@ -147,7 +147,7 @@
 			$(".luck_page_listbox .luck_page_li").click(function() {
 
 				var _this = $(this);
-
+				//检查是否已经翻开了一个奖品
 				if(!$(".luck_page_listbox .luck_page_li").hasClass("active")) {
 					_this.find(".back").attr("src", "img/luckdraw_page/luck_page_vr.png");
 					_this.flip(true);
@@ -160,7 +160,7 @@
 				}
 
 			})
-			
+			 
 			//我的奖品弹窗
 			$(".lookprize").click(function(){
 				
