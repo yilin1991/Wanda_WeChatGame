@@ -1,8 +1,8 @@
-html,body{height: 100%;}
+html,body{height: 100%;;position: relative;}
 
 img{display: block;width: 100%;}
 
-.pagebody{width: 100%;height: 100%;position: relative;background: url(../img/luckdraw_index/luckdraw_index_bg.jpg) no-repeat top center;background-size: 100% auto;display: flex;display: -webkit-flex;flex-direction: column;align-items: center;/*justify-content: center;*/}
+.pagebody{width: 100%;height: 100%;position: relative;background: url(../img/luckdraw_index/luckdraw_index_bg.jpg) no-repeat top center;background-size: 100% auto;display: flex;display: -webkit-flex;flex-direction: column;align-items: center;z-index: 99;}
 
 
 .luck_page_title{width: 100%;margin-top: 10%;}
@@ -13,27 +13,47 @@ img{display: block;width: 100%;}
 .luck_page_numtext span {display: block; font-size: 90%;}
 .luck_page_numtext span:nth-child(2){font-size: 180%;display: inline-block;margin-bottom: 3px;font-weight: 600;color: #ff0000;padding: 0 3px;}
 
-
 .luck_page_list{width: 90%;margin-top: 5%;position: relative;}
-
-
 .luck_page_list .luck_page_listbox{width: 90%; height: 90%; margin-left: 5%;margin-top: 5%; position: absolute;left: 0;top: 0;  display: flex;display: -webkit-flex;flex-wrap: wrap;justify-content: space-around;align-content: stretch;}
 .luck_page_list .luck_page_listbox .luck_page_li{width: 30%;display: table;}
-
 .luck_page_prize{width: 90%;display: flex;display: -webkit-flex; justify-content: space-between; align-items: center;margin-top: 2.5%;}
-
-
 .luck_page_prize span{font-size: 80%;}
 .luck_page_prize span b{color: #bf0000;}
-.luck_page_prize a{font-size: 80%;color: #2d1101;}
+.luck_page_prize a.lookprize{font-size: 85%;color: #2d1101;text-decoration: underline;}
 
 
 
 
-.luckdrawmsgbody{width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 99;background: rgba(0,0,0,0.72);display: flex;display: -webkit-flex;flex-direction: column;align-items: center;}
-
+.luckdrawmsgbody{width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 99;background: rgba(0,0,0,0.72);display: flex;display: -webkit-flex;flex-direction: column;align-items: center;z-index: 9;opacity: 0;}
 .luckdrawmsgbody .msgreslutimg{margin-top: 15%;}
 .luckdrawmsgbody a.msgreslutbtn{display: block;width: 40%;margin-top: 4%;}
-
-
 .closemsgbody{width: 8%;position: absolute;right: 6.5%;top: 18%;}
+
+
+.prizebody{width: 100%;height: 100%;position: absolute;left: 0;top: 0;background: rgba(0,0,0,0.72);z-index: 999;display: flex;display: -webkit-flex;flex-direction: column;align-items: center;justify-content: center;z-index: 9;opacity: 0;}
+.prizebody div{width: 95%;}
+
+.prize_title{margin-top: 5%;}
+
+.prize_content{background: url(../img/luckdraw_page/prize_img_content.png) repeat-y center center;background-size: 100% auto;padding-bottom: 5%;}
+
+.prize_content ul{display: flex;display: -webkit-flex;width: 90%;margin-left: 5%;height: 40px;align-items: center;justify-content: center;background-color: #fff7dc;margin-bottom: 1px;}
+
+
+.prize_content ul li{list-style: none;display: inline-flex;width: 33%;justify-content: center;align-items: center;height: 100%;}
+.prize_content ul li:nth-child(1){width: 34%;}
+.prize_content ul li p{font-size: 85%;color: #4b342c;}
+
+.prize_content ul.title{background-color: #b97c12;margin-top: 5%;margin-bottom: 0;}
+.prize_content ul.title li p{color: #fff7dc;}
+
+.prize_content ul.prize_no li{width: 100%;}
+
+
+.prize_content ul li a{display: block;width: 80%; height: 100%; font-size: 85%;color: #4b342c;text-align: center;line-height: 40px;color: #ad0000;}
+
+.prizebody a.prize_btn{display: block;width: 40%;margin-top: 8%;}
+
+
+.prizebody div.closeprize{width: 35px;height:35px; align-self: flex-end;margin-right: 3%;}
+.prizebody div.closeprize img{width: 100%;display: block;}

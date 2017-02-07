@@ -13,10 +13,10 @@
 
 		<div class="pagebody">
 			<!--游戏首页 Begin-->
-			<!--<div class="indexbody">
-			<img src="img/index/title_img.png" class="title_img"/>
-			<a class="begingame"><img src="img/index/btn_begin.png"/></a>
-		</div>-->
+			<div class="indexbody">
+				<img src="img/index/title_img.png" class="title_img"/>
+				<a class="begingame"><img src="img/index/btn_begin.png"/></a>
+			</div>
 			<!--游戏首页 End-->
 
 			<!--登记薄 Begin-->
@@ -40,7 +40,7 @@
 							<input type="text" class="input_text" datatype="*" name="txtdate" id="txtdate" value="" onfocus="(this.type='date')" onblur="this.type='text'" placeholder="输入生辰" />
 						</div>
 						
-						<a href="#" class="btn_register"><img src="img/index/btn_register.png"/></a>
+						<a href="result.html" class="btn_register"><img src="img/index/btn_register.png"/></a>
 						
 						<img src="img/index/remark_register.png" class="remark_register"/>
 						
@@ -48,7 +48,7 @@
 					
 					
 					<div class="registerclose">
-						<a href="#"><img src="img/index/formclose.png"/></a>
+						<a><img src="img/index/formclose.png"/></a>
 					</div>
 					
 					
@@ -58,9 +58,38 @@
 		</div>
 
 		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
-
-		<script src="js/selectivity-jquery.js" type="text/javascript" charset="utf-8"></script>
-
+		
+		<!--动画插件 Begin-->
+		<script src="js/fx.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			
+			$(function(){
+				indexbtn();
+				
+				$(".begingame").click(function(){
+					
+					showRegister();
+					
+				})
+				
+				
+				$(".registerclose").click(function(){
+					
+					closeRegister();
+					
+				})
+				
+				
+				
+				
+			})
+			
+			
+		</script>
+			
 	</body>
 
 </html>

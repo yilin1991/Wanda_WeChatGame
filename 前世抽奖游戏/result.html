@@ -15,17 +15,61 @@
 			<img src="img/result/result_img.png" class="resultimg" />
 
 			<div class="resultbtn">
-				<a href="#"><img src="img/result/result_share.png" /></a>
-				<a href="#"><img src="img/result/result_prize.png" /></a>
+				<a class="sharebtn"><img src="img/result/result_share.png" /></a>
+				<a href="luckdraw_index.html"><img src="img/result/result_prize.png" /></a>
 			</div>
-			
+
 			<div class="sharebody">
-				<img src="img/result/result_shareimg.png"/>
+				<img src="img/result/result_shareimg.png" />
 			</div>
-			
-			
+
 		</div>
 
 	</body>
 
+	<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<!--动画插件 Begin-->
+	<script src="js/fx.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+	<script type="text/javascript">
+		
+		
+		$(function(){
+			
+			$(".sharebtn").click(function(){
+				
+				$(".sharebody").css("display","block").animate({"opacity":"1"},500,"ease",function(){
+					
+					$(".sharebody img").animate({"opacity":"1"},500,"ease");
+					
+				})
+				
+				
+				
+			})
+			
+			
+			$(".sharebody").click(function(){
+				
+				$(".sharebody img").animate({"opacity":"0"},500,"ease",function(){
+					
+					$(".sharebody").animate({"opacity":"0"},500,"ease",function(){
+					
+					$(".sharebody").css("display","none")
+					
+				})
+					
+				});
+				
+			})
+			
+			
+						
+		})
+		
+	</script>
+	
+	
 </html>
